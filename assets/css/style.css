@@ -33,6 +33,9 @@
     --font-bold: 500;
     --font-reguler: 400;
     --font-light: 200;
+    --bgorange: #f7e0b3 ;
+    --orange: #FEBD2E ;
+    --bggrey: #F5F3F0;
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -45,7 +48,7 @@ body {
     font-family: var(--body-font);
     font-size: 16px;
     color: var(--text-body);
-    background-color: var(--background);
+    background-color: var(--orange);
 }
 h1, h2, h3, h4, h5, h6, ul, p {
     margin: 0;
@@ -175,11 +178,11 @@ button, button:hover, button:focus {
     box-shadow: 4px 4px 2px 16px var(--shadow);
 }
 .btn-fzn-filled {
-    background-color: var(--brand-normal);
-    color: var(--text-white);
+    background-color: var(--background-element);
+    color: var(--font-black);
 }
 .btn-fzn-filled:hover {
-    background-color: var(--brand-hover);
+    background-color: var(--orange);
     color: var(--text-white);
 }
 /*  End: Button by Fazanash  */
@@ -239,7 +242,7 @@ button, button:hover, button:focus {
     z-index: 9999;
 }
 .header img {
-    width: 150px;
+    width: 120px;
 }
 .header .nav-item .nav-link {
     padding: 16px 0;
@@ -247,7 +250,7 @@ button, button:hover, button:focus {
     color: var(--text-heading);
 }
 .header .nav-item .nav-link:hover, .header .nav-item .nav-link.active {
-    color: var(--brand-normal);
+    color: var(--text-white);
 }
 .go-dashboard {
     display: flex;
@@ -328,6 +331,7 @@ button, button:hover, button:focus {
 /* Start Hero */
 .container.hero {
     text-align: center;
+    background-color: var(--orange);
 }
 .container.hero .subtitle {
     background-color: var(--brand-accent);
@@ -340,10 +344,10 @@ button, button:hover, button:focus {
 }
 .container.hero .image {
     background-image: url(/assets/img/ornament/ornament-hero.png);
-    background-size: 75%;
-    background-position: 50% 80%;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 32px 0 0;
+    padding: 10px 0 0;
     overflow: hidden;
 }
 .container.hero .counter {
@@ -362,7 +366,7 @@ button, button:hover, button:focus {
 
 /* Service Start */
 .container-fluid.services {
-    background-color: var(--background-element);
+    background-color: var(--bgorange);
     margin-bottom: 32px;
 }
 .container-fluid.services .row {
@@ -669,7 +673,7 @@ button, button:hover, button:focus {
 }
 .container-fluid.footer .brand img {
     margin-bottom: 24px;
-    width: 250px;
+    width: 80px;
 }
 .container-fluid.footer .contact {
     padding: 0;
@@ -797,7 +801,8 @@ button, button:hover, button:focus {
 
     /* Start: Header */
     .header {
-        padding: 16px 0;
+        padding: 20px 0;
+        /* background-color: var(--orange); */
     }
     .header .nav-item .nav-link {
         padding: 16px;
